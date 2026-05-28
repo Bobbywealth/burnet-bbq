@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: burnet-bbq
+    region: oregon
+    plan: free
+    repo: https://github.com/Bobbywealth/burnet-bbq
+    branch: main
+    staticPublishPath: public
+    autoDeploy: true
