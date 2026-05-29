@@ -6,17 +6,19 @@ A premium, dark-themed BBQ restaurant website that channels the fire and soul of
 
 ## Design Language
 
-**Aesthetic direction:** Dark smokehouse luxury — think premium steakhouse meets Texas BBQ pit. Deep blacks and charcoals with ember-orange fire accents. Textured, not flat.
+**Aesthetic direction:** Dark green smokehouse luxury — premium steakhouse meets craft BBQ. Deep blacks with rich forest green accents. Clean, sophisticated, BBQ-appropriate.
 
 **Color palette:**
-- Primary (Fire): `#E85D04` (ember orange)
-- Secondary (Smoke): `#F48C06` (warm amber)
-- Accent (Char): `#FFBA08` (golden highlight)
+- Primary (Green): `#1B4332` (deep forest green)
+- Secondary (Green Light): `#2D6A4F` (sage green)
+- Accent (Green Bright): `#40916C` (fresh green)
 - Background: `#0D0D0D` (near black)
-- Surface: `#1A1A1A` (dark card)
+- Surface: `#111111` (dark card)
 - Border: `#2A2A2A` (subtle divider)
-- Text: `#FAFAFA` (off-white)
+- Text: `#FFFFFF` (white)
 - Text muted: `#A3A3A3`
+
+**New color scheme:** Dark green, white, and black — premium, clean, BBQ-appropriate.
 
 **Typography:**
 - Headings: `Bebas Neue` — tall, impactful, BBQ poster vibe
