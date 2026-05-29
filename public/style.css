@@ -159,9 +159,14 @@ h1, h2, h3, h4, h5 {
 
 .nav-logo {
   display: flex;
-  align-items: baseline;
-  gap: 4px;
+  align-items: center;
   flex-shrink: 0;
+}
+
+.nav-logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -301,6 +306,14 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   padding: 0 24px;
   max-width: 900px;
+}
+
+.hero-logo {
+  width: 280px;
+  max-width: 80vw;
+  margin: 0 auto 20px;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+  animation: fadeInDown 0.8s ease-out;
 }
 
 .hero-badge {
