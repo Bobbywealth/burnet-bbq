@@ -292,8 +292,7 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   inset: 0;
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity: 0.5;
-  animation: smokeDrift 20s linear infinite;
+  opacity: 0.3;
 }
 
 @keyframes smokeDrift {
@@ -341,6 +340,43 @@ h1, h2, h3, h4, h5 {
   color: #ffd966;
   margin-bottom: 24px;
   backdrop-filter: blur(8px);
+}
+
+.hero-reviews-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  background: rgba(10,15,10,0.75);
+  border: 1px solid rgba(255,215,0,0.3);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffd966;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.hero-reviews-badge i {
+  color: #ffd700;
+  font-size: 0.8rem;
+}
+
+.hero-reviews-badge span {
+  color: rgba(255,255,255,0.85);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.btn-hero-order {
+  font-size: 1.05rem;
+  padding: 15px 32px;
+  letter-spacing: 0.05em;
 }
 
 .hero-badge i {
@@ -491,39 +527,6 @@ section {
 .logo-accent {
   animation: logoGlow 3s ease-in-out infinite;
 }
-
-/* Floating particles */
-@keyframes floatUp {
-  0% { transform: translateY(0) scale(1); opacity: 0; }
-  10% { opacity: 0.6; }
-  90% { opacity: 0.3; }
-  100% { transform: translateY(-120vh) scale(0.5); opacity: 0; }
-}
-
-.particles {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.particle {
-  position: absolute;
-  bottom: -20px;
-  width: 6px;
-  height: 6px;
-  background: rgba(64,145,108,0.6);
-  border-radius: 50%;
-  animation: floatUp linear infinite;
-}
-
-.particle:nth-child(2) { left: 15%; width: 4px; height: 4px; animation-duration: 8s; animation-delay: 1s; background: rgba(45,106,79,0.5); }
-.particle:nth-child(3) { left: 30%; width: 8px; height: 8px; animation-duration: 12s; animation-delay: 3s; background: rgba(27,67,50,0.4); }
-.particle:nth-child(4) { left: 50%; width: 5px; height: 5px; animation-duration: 9s; animation-delay: 0.5s; }
-.particle:nth-child(5) { left: 65%; width: 3px; height: 3px; animation-duration: 7s; animation-delay: 2s; background: rgba(64,145,108,0.4); }
-.particle:nth-child(6) { left: 80%; width: 7px; height: 7px; animation-duration: 11s; animation-delay: 4s; background: rgba(45,106,79,0.5); }
-.particle:nth-child(7) { left: 90%; width: 4px; height: 4px; animation-duration: 10s; animation-delay: 1.5s; }
 
 /* Hero text reveal */
 @keyframes heroReveal {
@@ -1591,6 +1594,30 @@ section {
 }
 
 @media (max-width: 480px) {
+  .hero-badge,
+  .hero-reviews-badge {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+
+  .hero-reviews-badge {
+    margin-bottom: 14px;
+  }
+
+  .hero-reviews-badge span {
+    font-size: 0.72rem;
+  }
+
+  .hero-desc {
+    font-size: 0.92rem;
+    margin-bottom: 24px;
+  }
+
+  .hero-actions .btn {
+    font-size: 0.88rem;
+    padding: 13px 18px;
+  }
+
   .locations-grid {
     grid-template-columns: 1fr;
   }
