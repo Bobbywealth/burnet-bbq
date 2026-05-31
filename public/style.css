@@ -1528,6 +1528,7 @@ section {
   .nav-toggle {
     display: flex;
     cursor: pointer;
+    z-index: 1000;
   }
 
   .nav-toggle.active span:nth-child(1) {
