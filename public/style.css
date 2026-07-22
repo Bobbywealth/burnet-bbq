@@ -295,6 +295,51 @@ h1, h2, h3, h4, h5 {
   opacity: 0.3;
 }
 
+/* Floating ember particles rising through hero (CSS-only, lightweight) */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-particles .particle {
+  position: absolute;
+  bottom: -20px;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, rgba(255,170,60,0.85) 0%, rgba(255,120,40,0.4) 50%, transparent 75%);
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: floatUp 9s linear infinite;
+  opacity: 0;
+}
+
+.hero-particles .p1 { left: 12%; width: 5px; height: 5px; animation-delay: 0s; animation-duration: 9s; }
+.hero-particles .p2 { left: 28%; width: 8px; height: 8px; animation-delay: 2s; animation-duration: 11s; }
+.hero-particles .p3 { left: 45%; width: 4px; height: 4px; animation-delay: 4s; animation-duration: 8s; }
+.hero-particles .p4 { left: 62%; width: 7px; height: 7px; animation-delay: 1s; animation-duration: 10s; }
+.hero-particles .p5 { left: 78%; width: 5px; height: 5px; animation-delay: 5s; animation-duration: 9s; }
+.hero-particles .p6 { left: 88%; width: 6px; height: 6px; animation-delay: 3s; animation-duration: 12s; }
+
+@keyframes floatUp {
+  0%   { transform: translateY(0) translateX(0) scale(0.6); opacity: 0; }
+  10%  { opacity: 0.9; }
+  50%  { opacity: 0.7; transform: translateY(-50vh) translateX(20px) scale(1); }
+  90%  { opacity: 0.3; }
+  100% { transform: translateY(-110vh) translateX(-10px) scale(0.4); opacity: 0; }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.04); }
+}
+
+.hero-logo {
+  animation: fadeInDown 0.8s ease-out, breathe 4s ease-in-out 1s infinite;
+}
+
 @keyframes smokeDrift {
   0% { transform: translateY(0) scale(1.1); }
   50% { transform: translateY(-20px) scale(1.15); }
@@ -321,7 +366,7 @@ h1, h2, h3, h4, h5 {
   max-width: 80vw;
   margin: 0 auto 20px;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
-  animation: fadeInDown 0.8s ease-out;
+  animation: fadeInDown 0.8s ease-out, breathe 4s ease-in-out 1s infinite;
 }
 
 .hero-badge {
