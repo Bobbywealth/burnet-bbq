@@ -18,7 +18,10 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <img src="logo.png" alt="Burnet BBQ" class="nav-logo-img" />
+        <picture>
+          <source srcset="logo.webp" type="image/webp" />
+          <img src="logo.png" alt="Burnet BBQ" class="nav-logo-img" width="40" height="40" decoding="async" />
+        </picture>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -45,7 +48,10 @@
       <div class="grain-overlay"></div>
     </div>
     <div class="hero-content">
-      <img src="logo.png" alt="Burnet BBQ Logo" class="hero-logo reveal" />
+      <picture>
+        <source srcset="logo.webp" type="image/webp" />
+        <img src="logo.png" alt="Burnet BBQ Logo" class="hero-logo reveal" width="180" height="180" decoding="async" />
+      </picture>
       <div class="hero-badge reveal">
         <i class="fas fa-fire"></i> 5 Locations Across New Jersey
       </div>
@@ -651,8 +657,10 @@
           </div>
           <div class="location-card-body">
             <div class="location-detail">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Warren, NJ</span>
+              <i class="fas fa-location-dot"></i>
+              <a href="https://maps.google.com/?q Warren+NJ+07059" target="_blank" rel="noopener">
+                Warren, NJ 07059
+              </a>
             </div>
             <div class="location-detail">
               <i class="fas fa-clock"></i>
@@ -704,6 +712,53 @@
           </a>
         </div>
       </div>
+
+      <form class="catering-form reveal" action="mailto:catering@burnetbbq.com" method="post" enctype="text/plain" aria-label="Catering inquiry form">
+        <h3>Or Send Us Your Event Details</h3>
+        <p class="form-sub">We'll get back to you within one business day with a custom quote.</p>
+        <div class="form-grid">
+          <label class="form-field">
+            <span>Your Name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label class="form-field">
+            <span>Phone</span>
+            <input type="tel" name="phone" required autocomplete="tel" />
+          </label>
+          <label class="form-field">
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="form-field">
+            <span>Event Date</span>
+            <input type="date" name="event_date" required />
+          </label>
+          <label class="form-field">
+            <span>Guest Count</span>
+            <input type="number" name="guest_count" min="10" max="1000" required placeholder="e.g. 75" />
+          </label>
+          <label class="form-field">
+            <span>Preferred Location</span>
+            <select name="location" required>
+              <option value="">Choose a location…</option>
+              <option value="Burnet Ave (HQ)">Burnet Ave (HQ) — Union</option>
+              <option value="Stuyvesant Ave">Stuyvesant Ave — Union</option>
+              <option value="Chancellor Ave">Chancellor Ave — Irvington</option>
+              <option value="Hoffman Blvd">Hoffman Blvd — East Orange</option>
+              <option value="Warren (Opening 2026)">Warren (Opening 2026)</option>
+              <option value="No preference">No preference</option>
+            </select>
+          </label>
+        </div>
+        <label class="form-field form-field-full">
+          <span>Tell us about your event</span>
+          <textarea name="notes" rows="4" placeholder="Type of event, drop-off vs full-service, dietary needs, etc."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg">
+          <i class="fas fa-paper-plane"></i> Send Inquiry
+        </button>
+        <p class="form-note">Opens your email client with the form details pre-filled.</p>
+      </form>
 
       <div class="catering-features reveal">
         <div class="catering-feature">
