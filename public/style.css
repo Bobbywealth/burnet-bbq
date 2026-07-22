@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10,15,10,0.7) 0%, rgba(10,15,10,0.85) 50%, rgba(10,15,10,0.95) 100%),
+    linear-gradient(180deg, rgba(10,15,10,0.5) 0%, rgba(10,15,10,0.6) 50%, rgba(10,15,10,0.7) 100%),
     url('hero-bg.png') center center / cover no-repeat;
   z-index: 0;
 }
