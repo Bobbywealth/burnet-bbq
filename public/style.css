@@ -1506,13 +1506,16 @@ section {
     padding: 24px;
     gap: 4px;
     border-bottom: 1px solid var(--border);
-    transform: translateY(-110%);
-    transition: var(--transition);
+    transform: translateY(calc(-100% - var(--nav-height)));
+    visibility: hidden;
+    transition: var(--transition), visibility 0s linear var(--transition);
     z-index: 999;
   }
 
   .nav-links.open {
     transform: translateY(0);
+    visibility: visible;
+    transition: var(--transition), visibility 0s;
   }
 
   .nav-link {
