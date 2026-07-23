@@ -1637,8 +1637,8 @@ section {
   align-items: center;
   gap: 6px;
   min-height: 44px;
-  padding: 13px 0;
-  margin: -13px 0;
+  padding: 13px 8px;
+  margin: -13px -8px;
 }
 
 .footer-nav a:hover {
@@ -1660,8 +1660,8 @@ section {
   gap: 8px;
   line-height: 1.5;
   min-height: 44px;
-  padding: 13px 0;
-  margin: -13px 0;
+  padding: 13px 8px;
+  margin: -13px -8px;
 }
 
 .footer-locations a i {
