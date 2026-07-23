@@ -126,8 +126,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .btn-sm {
-  padding: 8px 18px;
+  padding: 13px 18px;
   font-size: 0.85rem;
+  min-height: 44px;
 }
 
 .btn-lg {
@@ -198,7 +199,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-link {
-  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 14px;
+  min-height: 44px;
   font-family: var(--font-heading);
   font-size: 0.9rem;
   font-weight: 500;
@@ -215,10 +219,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-call {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
+  padding: 13px 20px;
+  min-height: 44px;
   background: var(--green);
   color: var(--white);
   border-radius: var(--radius);
@@ -241,8 +246,12 @@ h1, h2, h3, h4, h5 {
   display: none;
   flex-direction: column;
   gap: 5px;
-  padding: 8px;
+  padding: 14px;
   margin-left: auto;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-toggle span {
@@ -491,8 +500,10 @@ h1, h2, h3, h4, h5 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border: 1px solid var(--border);
   border-radius: 50%;
   color: var(--text-muted);
@@ -929,7 +940,8 @@ section {
 }
 
 .menu-tab {
-  padding: 10px 24px;
+  padding: 13px 24px;
+  min-height: 44px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 100px;
@@ -940,7 +952,7 @@ section {
   text-transform: uppercase;
   color: var(--text-muted);
   transition: var(--transition);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
 }
@@ -1196,6 +1208,11 @@ section {
 }
 
 .location-detail a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 13px 8px;
+  margin: -13px -8px;
   color: var(--text-muted);
   transition: var(--transition);
 }
@@ -1341,9 +1358,10 @@ section {
   color: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 10px 14px;
+  padding: 13px 14px;
   font-family: var(--font-body);
   font-size: 0.95rem;
+  min-height: 44px;
   transition: border-color 0.2s;
 }
 
@@ -1574,8 +1592,10 @@ section {
 }
 
 .footer-social a {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1613,9 +1633,12 @@ section {
   font-size: 0.9rem;
   color: var(--text-muted);
   transition: var(--transition);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
+  min-height: 44px;
+  padding: 13px 0;
+  margin: -13px 0;
 }
 
 .footer-nav a:hover {
@@ -1632,10 +1655,13 @@ section {
   font-size: 0.85rem;
   color: var(--text-muted);
   transition: var(--transition);
-  display: flex;
+  display: inline-flex;
   align-items: flex-start;
   gap: 8px;
   line-height: 1.5;
+  min-height: 44px;
+  padding: 13px 0;
+  margin: -13px 0;
 }
 
 .footer-locations a i {
